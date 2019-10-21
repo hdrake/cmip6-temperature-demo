@@ -1,0 +1,110 @@
+name: pangeo
+channels:
+  - conda-forge
+dependencies:
+  # base env from r2d - see: https://github.com/jupyter/repo2docker/blob/master/repo2docker/buildpacks/conda/environment.py-3.7.yml
+  - python=3.7.*
+  - ipywidgets==7.4.2
+  # - jupyterlab==0.35.4
+  # - jupyterhub=1.0
+  - nbconvert==5.4.1
+  - notebook==5.7.8
+  - nteract_on_jupyter==2.1.3
+  # base env from pangeo stacks - see: https://github.com/pangeo-data/pangeo-stacks/blob/master/base-notebook/binder/environment.yml
+  - jupyterlab=1
+  - jupyterhub=1
+  - nbgitpuller=0.7
+  - dask>=2.5.2
+  - distributed>=2.5
+  - dask-kubernetes>=0.92
+  - dask-gateway>=0.5
+  - tornado=6
+  - jupyter-server-proxy=1.1
+  - bokeh=1.3
+  - graphviz=2.40
+  # - pip=19
+  # pangeo notebook from pangeo stacks - see: https://github.com/pangeo-data/pangeo-stacks/blob/master/pangeo-notebook/binder/environment.yml
+  # core scipy packages
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - xarray
+  - sparse
+  # data science stuff
+  - scikit-image
+  - scikit-learn
+  - dask-ml
+  - tensorflow
+  - keras
+  - pytorch-cpu
+  # pyviz
+  - holoviews
+  - panel
+  - geoviews
+  - hvplot
+  - geoviews
+  - datashader
+  # geospatial
+  - iris
+  - cartopy
+  - geopandas
+  - rasterio
+  - netcdf4
+  - h5py
+  - h5netcdf
+  - regionmask
+  - rio-cogeo
+  # geoscience-related
+  - climlab
+  - metpy
+  - satpy
+  - gsw
+  - eofs
+  - esmpy
+  - xesmf
+  - windspharm
+  # intake-related
+  - intake
+  - intake-xarray
+  - intake-stac
+  # zarr-related
+  - zarr
+  - numcodecs
+  - python-blosc
+  - lz4
+  - gcsfs
+  - s3fs
+  - tiledb-py
+  # jupyter-related
+  - ipyleaflet
+  # xarray-related
+  - xgcm
+  - xrft
+  - xrviz
+  - climpred
+  - pytide
+  - pyinterp
+  - pip
+  # from ocean deployment - see: https://github.com/pangeo-data/pangeo-cloud-federation/blob/staging/deployments/ocean/image/binder/environment.yml
+  - cc-plugin-ncei
+  - ciso
+  - compliance-checker
+  - ctd
+  - geolinks
+  - gridgeo
+  - ioos-tools
+  - pocean-core
+  - podaacpy
+  - pyoos
+  - retrying
+  - unyt
+  - utide
+  - xlrd
+  - xmitgcm>=0.4.1
+  - pip:
+    - git+https://github.com/ian-r-rose/dask-labextension.git@de-asyncify#egg=dask_labextension
+    - git+https://github.com/jbusecke/xgcm.git@jbusecke_weighted_average_and_cumsum
+    - git+https://github.com/intake/filesystem_spec.git@master
+    - git+https://github.com/dask/gcsfs.git@master
+    - intake-esm
