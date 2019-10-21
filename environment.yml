@@ -2,22 +2,13 @@ name: pangeo
 channels:
   - conda-forge
 dependencies:
-  # base env from r2d - see: https://github.com/jupyter/repo2docker/blob/master/repo2docker/buildpacks/conda/environment.py-3.7.yml
   - python=3.7.*
-  - ipywidgets==7.4.2
-  - notebook==5.7.8
-  # base env from pangeo stacks - see: https://github.com/pangeo-data/pangeo-stacks/blob/master/base-notebook/binder/environment.yml
-  - jupyterlab=1
-  - jupyterhub=1
-  - jupyter-server-proxy=1.1
-  # core scipy packages
   - numpy
   - scipy
   - matplotlib
   - pandas
   - xarray
   - sparse
-  # data science stuff
   - cartopy
   - netcdf4
   - h5py
@@ -29,7 +20,6 @@ dependencies:
   - zarr
   - xgcm
   - pip
-  # from ocean deployment - see: https://github.com/pangeo-data/pangeo-cloud-federation/blob/staging/deployments/ocean/image/binder/environment.yml
   - pip:
     - git+https://github.com/intake/filesystem_spec.git@master
     - intake-esm
