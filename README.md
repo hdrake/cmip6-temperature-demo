@@ -15,9 +15,8 @@ Extending the analysis to projections of the future (out to 2100) is left as a g
 
 #### Calculating the Equilibrium Climate Sensitivity (ECS)
 
-The following binder is a tutorial for calculating the Equilibrium Climate Sensitivity, i.e. the amount of warming at equilibrium due to a doubling to CO2, in the CMIP6 models, plotted as a probability histogram.
-
+The following binder is a tutorial for calculating the Equilibrium Climate Sensitivity, i.e. the amount of warming at equilibrium (really, a few hundred years after doubling) due to a doubling to CO2, in the CMIP6 models, plotted as a probability histogram.
 
 [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/hdrake/cmip6-temperature-demo/master?filepath=notebooks%2F01_calculate_ECS.ipynb)
 
-Note: in practice this example calculates the amount of warming due to a quadrupling of CO2, but conveniently this is equivalent to two doublings.
+Note: these estimates are biased low (by a factor of 1.5-2) because the models have not yet equilibrated are only analyzed a few hundreds years after quadrupling and they have not yet reached equilibrium. Since model experiments are rarely run out for more than a few hundred years, the climate science community has apparently switched to the so-called “Gregory-method” for their estimates of ECS, which linear extrapolates the (non-linear) relationship between radiative imbalance at the top of atmosphere and the global mean surface air temperature (to extrapolate from 100-1000 years or so all the way out to equilibrium). The ECS is then defined as the zero-imbalance intercept temperature of the linear extrapolation. Apparently this is the method that has been used for most estimates of ECS you see since CMIP5. Although not in the standard Deck of CMIP experiments, some modelling centers have produced output from [long-term simulations that run 200+ years](http://www.longrunmip.org/). See [Angie Pendergrass' repo](https://github.com/apendergrass/cmip6-ecs) for an application of the Gregory method which produces the large ECS estimates reported in the media.
