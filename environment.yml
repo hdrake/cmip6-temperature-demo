@@ -9,6 +9,7 @@ dependencies:
   - pandas
   - xarray
   - sparse
+  - cftime=1.0.3.4
   - cartopy
   - netcdf4
   - h5py
