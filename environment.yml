@@ -1,9 +1,12 @@
-name: pangeo
+name: cmip6-temperature-demo
 channels:
   - conda-forge
 dependencies:
   - python=3.7.*
   - numpy
+  - ipykernel
+  - jupyter
+  - jupyterlab
   - scipy
   - matplotlib
   - pandas
@@ -12,6 +15,7 @@ dependencies:
   - cftime=1.0.3.4
   - cartopy
   - netcdf4
+  - tqdm
   - h5py
   - h5netcdf
   - regionmask
