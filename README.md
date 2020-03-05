@@ -1,5 +1,10 @@
 # cmip6-temperature-demo
 
+
+[![DOI](https://zenodo.org/badge/216607808.svg)](https://zenodo.org/badge/latestdoi/216607808)
+
+
+
 ## A handful of tutorials for basic analysis of climate models from CMIP6 on the Google Cloud Platform
 
 #### Analyzing state-of-the-art simulations of global warming (historical and future projections)
